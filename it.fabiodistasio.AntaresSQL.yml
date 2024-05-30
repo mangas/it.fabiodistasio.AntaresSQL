@@ -11,7 +11,7 @@ separate-locales: false
 finish-args:
   - --share=ipc
   - --share=network
-  - --socket=fallback-x11
+  # - --socket=fallback-x11
   - --socket=wayland
   - --socket=pulseaudio
   - --device=dri
@@ -60,8 +60,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/antares-sql/antares.git
-        tag: v0.7.24
-        commit: 957cb9e1a59432fa947af26008020b4ac4f43aa9
+        branch: master
+        commit: 0ec9d3cfc1066bb3cc7ccdc96dc40dbc9374c0b9
         dest: main
       
       - type: file
